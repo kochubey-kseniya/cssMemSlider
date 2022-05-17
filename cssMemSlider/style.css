@@ -1,0 +1,120 @@
+:root {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  --slider-width: 60vw;
+  --slider-gap: 10vw;
+}
+
+body {
+  background-color: #DCDCDC;
+  background-size: cover;
+  background-position-x: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.slider {
+  display: grid;
+  grid-template-areas:
+    "slider slider"
+    "text nav";
+  gap: .5rem;
+  grid-template-columns: 1fr 1fr;
+  margin:auto;
+  margin-top: 5vh; 
+  width: 60vw;
+  padding: 2vw;
+  max-height: 95vh;
+  border-radius: 1vw;
+  background-color: #00171f;
+  transition: all .2s;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.slider__box {
+  grid-area: slider;
+  border-radius: 1vw;
+  overflow: hidden;
+  background: #00171f;
+  max-height: 80vh;
+}
+
+.slider__slides {
+  display: flex;
+  gap: var(--slider-gap);
+  scroll-behavior: smooth;
+  transition: all .2s;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.slide__image {
+  width: var(--slider-width);
+}
+
+.slider__texts {
+  grid-area: text;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.5s;
+  color: #e8c468;
+  height: 5vh;
+  overflow: hidden;
+}
+
+.slide__text {
+  font: italic 0.885rem 'PT Sans', Arial, sans-serif;
+  width: 0;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0%);
+  transition: all .4s;
+  
+}
+
+.slider__nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: .5rem;
+}
+
+.slider__nav label {
+  pointer-events: visible;
+  cursor: pointer;
+  padding: .5rem;
+}
+
+.slider__nav label span {
+  display: block;
+  height: 1vw;
+  width: 1vw;
+  border-radius: 50%;
+  background-color: #DAA520;
+  border: .1rem solid #DAA520;
+  transition: all 0.3s;
+}
+
+.slider__nav label:hover span {
+ 
+  border-color: white;
+  background-color: white;
+  
+}
+
+.slider__nav label:active span {
+  background-color: white;
+  border-color: white;
+}
