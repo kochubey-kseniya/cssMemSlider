@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <title>CSS Slider</title>
+</head>
+
+<body>
+  <input type="radio" id="nav1" name="nav" checked>
+  <input type="radio" id="nav2" name="nav">
+  <input type="radio" id="nav3" name="nav">
+  <input type="radio" id="nav4" name="nav">
+
+  <main class="slider">
+    <div class="slider__box">
+      <div class="slider__slides">
+        <div id="slides__1" class="slide">
+          <img src="./1.jpg" alt="photo1" class="slide__image">
+        </div>
+        <div id="slides__2" class="slide">
+          <img src="./2.jpg" alt="photo2" class="slide__image">
+        </div>
+        <div id="slides__3" class="slide">
+          <img src="./3.jpg" alt="photo3" class="slide__image">
+        </div>
+        <div id="slides__4" class="slide">
+          <img src="./4.jpg" alt="photo4" class="slide__image">
+        </div>
+      </div>
+    </div>
+    <div class="slider__texts">
+      <p class="slide__text">Если твоя жизнь потеряла краски...Раскрась ее сам...</p>
+      <p class="slide__text">Нет недостижимых  целей. Есть слабые характеры.</p>
+      <p class="slide__text">Заряди своей энергией других</p>
+      <p class="slide__text">Решение всегда проще, чем ты думаешь...</p>
+    </div>
+    <div class="slider__nav">
+      <label for="nav1"><span></span></label>
+      <label for="nav2"><span></span></label>
+      <label for="nav3"><span></span></label>
+      <label for="nav4"><span></span></label>
+    </div>
+  </main>
+</body>
+
+</html>
