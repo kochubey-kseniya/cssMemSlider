@@ -244,3 +244,36 @@ input[type="radio"] {
   transform: scale(1);
   width: 100%;
 }
+
+/* adaptive */
+@media screen and (max-width: 767px) {
+  :root {
+    --slider-width: 80vw;
+  }
+
+  .slider {
+    grid-template-areas: "slider""nav""text";
+    grid-template-columns: 1fr;
+  }
+
+  .slider__nav {
+    justify-content: center;
+  }
+
+  /* slides switching mobile*/
+  #nav1:checked~* .slider__slides {
+    transform: translateX(0%);
+  }
+
+  #nav2:checked~* .slider__slides {
+    transform: translateX(-90vw);
+  }
+
+  #nav3:checked~* .slider__slides {
+    transform: translateX(-180vw);
+  }
+
+  #nav4:checked~* .slider__slides {
+    transform: translateX(-270vw);
+  }
+}
