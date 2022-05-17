@@ -118,3 +118,39 @@ input[type="radio"] {
   background-color: white;
   border-color: white;
 }
+#nav1:checked~* .slider__nav label:nth-child(1) span {
+  background-color: transparent;
+  border-color: #e8c468;
+}
+
+#nav2:checked~* .slider__nav label:nth-child(2) span {
+  background-color: transparent;
+  border-color: #e8c468;
+}
+
+#nav3:checked~* .slider__nav label:nth-child(3) span {
+  background-color: transparent;
+  border-color: #e8c468;
+}
+
+#nav4:checked~* .slider__nav label:nth-child(4) span {
+  background-color: transparent;
+  border-color: #e8c468;
+}
+
+
+#nav1:checked~* .slider__nav label:nth-child(1):hover span {
+  border-color: #e6bc16;
+}
+
+#nav2:checked~* .slider__nav label:nth-child(2):hover span {
+  border-color: #e6bc16;
+}
+
+#nav3:checked~* .slider__nav label:nth-child(3):hover span {
+  border-color: #e6bc16;
+}
+
+#nav4:checked~* .slider__nav label:nth-child(4):hover span {
+  border-color: #e6bc16;
+}
